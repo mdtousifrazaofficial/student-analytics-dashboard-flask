@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-\# Student Analytics Dashboard (Flask)
+# Student Analytics Dashboard (Flask)
 
 
 
@@ -9,121 +8,121 @@ A modern Student Management and Analytics Dashboard built using Flask.
 
 This project allows users to:
 
-\- Add students
+- Add students
 
-\- Update student details
+- Update student details
 
-\- Delete students
+- Delete students
 
-\- Search students
+- Search students
 
-\- View analytics
+- View analytics
 
-\- Export CSV reports
+- Export CSV reports
 
-\- Export analytics reports
+- Export analytics reports
 
 
 
 The project follows modular Flask architecture using:
 
-\- Blueprints
+- Blueprints
 
-\- Services Layer
+- Services Layer
 
-\- Templates
+- Templates
 
-\- Static Files
+- Static Files
 
-\- JSON File Storage
-
-
-
-\---
+- JSON File Storage
 
 
 
-\# Features
+---
 
 
 
-\## Student Management
-
-\- Add student records
-
-\- Update student details
-
-\- Delete students
-
-\- Search functionality
+# Features
 
 
 
-\## Analytics Dashboard
+## Student Management
 
-\- Highest scoring student
+- Add student records
 
-\- Lowest scoring student
+- Update student details
 
-\- Course-wise average
+- Delete students
 
-\- Pass/Fail report
-
-\- Student average calculation
+- Search functionality
 
 
 
-\## Export Features
+## Analytics Dashboard
 
-\- Export students CSV report
+- Highest scoring student
 
-\- Export analytics TXT report
+- Lowest scoring student
 
+- Course-wise average
 
+- Pass/Fail report
 
-\## Frontend
-
-\- Responsive UI
-
-\- Search bar
-
-\- Dynamic student cards
-
-\- Analytics dashboard
-
-\- Form validation
+- Student average calculation
 
 
 
-\---
+## Export Features
+
+- Export students CSV report
+
+- Export analytics TXT report
 
 
 
-\# Technologies Used
+## Frontend
+
+- Responsive UI
+
+- Search bar
+
+- Dynamic student cards
+
+- Analytics dashboard
+
+- Form validation
 
 
 
-\- Python
-
-\- Flask
-
-\- HTML
-
-\- CSS
-
-\- JavaScript
-
-\- Jinja2
-
-\- JSON
+---
 
 
 
-\---
+# Technologies Used
 
 
 
-\# Project Structure
+- Python
+
+- Flask
+
+- HTML
+
+- CSS
+
+- JavaScript
+
+- Jinja2
+
+- JSON
+
+
+
+---
+
+
+
+# Project Structure
 
 
 
@@ -193,4 +192,8 @@ project/
 
 =======
 # student-analytics-dashboard-flask
->>>>>>> ae2dc73151294fbc900dba4ed0bbbabe6b673181
+![preview_analytics_dashboard](preview_analytics_dashboard.png)
+
+# student-analytics-dashboard-flask
+![Preview_dashboard](Preview_dashboard.png)
+
