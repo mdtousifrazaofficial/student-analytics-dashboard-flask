@@ -191,9 +191,6 @@ project/
 └── README.md
 
 =======
-# student-analytics-dashboard-flask
-![preview_analytics_dashboard](preview/preview_analytics_dashboard.png)
-
-# student-analytics-dashboard-flask
-![Preview_dashboard](preview/Preview_dashboard.png)
+![Dashboard](preview/Preview_dashboard.png)
+![Analytics Dashboard](preview/preview_analytics_dashboard.png)
 
