@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 \# Student Analytics Dashboard (Flask)
 
 
@@ -190,3 +191,6 @@ project/
 
 └── README.md
 
+=======
+# student-analytics-dashboard-flask
+>>>>>>> ae2dc73151294fbc900dba4ed0bbbabe6b673181
