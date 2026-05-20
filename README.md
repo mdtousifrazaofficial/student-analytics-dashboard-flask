@@ -190,7 +190,6 @@ project/
 
 └── README.md
 
-=======
 ![Dashboard](preview/Preview_dashboard.png)
 ![Analytics Dashboard](preview/preview_analytics_dashboard.png)
 
