@@ -137,17 +137,6 @@ Open your browser and visit:
 ```bash
 http://127.0.0.1:5000
 ```
-
----
-
-# 📈 Future Improvements
-
-- Database integration (MySQL/PostgreSQL)
-- Authentication system
-- Charts and visual analytics
-- REST API support
-- Docker deployment
-
 ---
 
 # 👨‍💻 Author
