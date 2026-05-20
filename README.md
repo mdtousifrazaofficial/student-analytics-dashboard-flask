@@ -192,8 +192,8 @@ project/
 
 =======
 # student-analytics-dashboard-flask
-![preview_analytics_dashboard](preview_analytics_dashboard.png)
+![preview_analytics_dashboard](/preview_analytics_dashboard.png)
 
 # student-analytics-dashboard-flask
-![Preview_dashboard](Preview_dashboard.png)
+![Preview_dashboard](/Preview_dashboard.png)
 
