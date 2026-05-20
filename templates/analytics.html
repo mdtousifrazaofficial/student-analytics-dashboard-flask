@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Analytics Dashboard
+    </title>
+
+    <!-- CSS -->
+
+    <link
+        rel="stylesheet"
+        href="/static/style.css"
+    >
+
+    <!-- GOOGLE FONT -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- TITLE -->
+
+        <h1 class="title">
+            Analytics Dashboard
+        </h1>
+
+        <p class="subtitle">
+            Student Performance Insights
+        </p>
+
+        <!-- ANALYTICS CARDS -->
+
+        <div class="analytics-grid">
+
+            <!-- HIGHEST -->
+
+            <div class="analytics-card">
+
+                <h2>
+                    Highest Scoring Student
+                </h2>
+
+                <p>
+                    {{ highest["name"] }}
+                </p>
+
+            </div>
+
+            <!-- LOWEST -->
+
+            <div class="analytics-card">
+
+                <h2>
+                    Lowest Scoring Student
+                </h2>
+
+                <p>
+                    {{ lowest["name"] }}
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- =========================
+             STUDENT AVERAGE MARKS
+        ========================== -->
+
+        <h2 class="section-title">
+            Student Average Marks
+        </h2>
+
+        <div class="table-container">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Name</th>
+                        <th>Average Marks</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    {% for student in student_average %}
+
+                    <tr>
+
+                        <td>
+                            {{ student.name }}
+                        </td>
+
+                        <td>
+                            {{ student.average }}
+                        </td>
+
+                    </tr>
+
+                    {% endfor %}
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <!-- =========================
+             COURSE WISE AVERAGE
+        ========================== -->
+
+        <h2 class="section-title">
+            Course Wise Average
+        </h2>
+
+        <div class="table-container">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Course</th>
+                        <th>Average Marks</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    {% for course, average in course_average.items() %}
+
+                    <tr>
+
+                        <td>
+                            {{ course }}
+                        </td>
+
+                        <td>
+                            {{ average }}
+                        </td>
+
+                    </tr>
+
+                    {% endfor %}
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <!-- =========================
+             PASS / FAIL REPORT
+        ========================== -->
+
+        <h2 class="section-title">
+            Pass / Fail Report
+        </h2>
+
+        <div class="table-container">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Name</th>
+                        <th>Average</th>
+                        <th>Status</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    {% for student in report %}
+
+                    <tr>
+
+                        <td>
+                            {{ student.name }}
+                        </td>
+
+                        <td>
+                            {{ student.average }}
+                        </td>
+
+                        <td>
+                            {{ student.status }}
+                        </td>
+
+                    </tr>
+
+                    {% endfor %}
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <!-- BUTTONS -->
+
+        <div class="bottom-buttons">
+
+            <a
+                href="/"
+                class="link-btn"
+            >
+                Back To Home
+            </a>
+
+            <a
+                href="/export/analytics"
+                class="link-btn"
+            >
+                Export Analytics
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- JS -->
+
+    <script src="/static/app.js"></script>
+
+</body>
+
+</html>

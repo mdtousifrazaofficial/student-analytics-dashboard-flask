@@ -1,0 +1,22 @@
+[
+    {
+        "id": "11",
+        "name": "Tousif",
+        "age": 20,
+        "course": "Data Analytics",
+        "email": "tousif@gmail.com",
+        "subject1": 92,
+        "subject2": 88,
+        "subject3": 100
+    },
+    {
+        "id": "12",
+        "name": "Zaid",
+        "age": 19,
+        "course": "Data science",
+        "email": "zaid@gmial.com",
+        "subject1": 78,
+        "subject2": 65,
+        "subject3": 49
+    }
+]

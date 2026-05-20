@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Student Management System
+    </title>
+
+    <!-- CSS -->
+
+    <link
+        rel="stylesheet"
+        href="/static/style.css"
+    >
+
+    <!-- GOOGLE FONT -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- TITLE -->
+
+        <h1 class="title">
+            Student Management System
+        </h1>
+
+        <p class="subtitle">
+            Manage students professionally
+        </p>
+
+        <!-- ADD STUDENT FORM -->
+
+        <form
+            action="/add"
+            method="POST"
+            class="student-form"
+        >
+
+            <input
+                type="text"
+                name="id"
+                placeholder="Student ID"
+                required
+            >
+
+            <input
+                type="text"
+                name="name"
+                placeholder="Full Name"
+                required
+            >
+
+            <input
+                type="number"
+                name="age"
+                placeholder="Age"
+                required
+            >
+
+            <input
+                type="text"
+                name="course"
+                placeholder="Course"
+                required
+            >
+
+            <input
+                type="email"
+                name="email"
+                placeholder="Email Address"
+                required
+            >
+
+            <input
+                type="number"
+                name="subject1"
+                placeholder="Subject 1 Marks"
+                required
+            >
+
+            <input
+                type="number"
+                name="subject2"
+                placeholder="Subject 2 Marks"
+                required
+            >
+
+            <input
+                type="number"
+                name="subject3"
+                placeholder="Subject 3 Marks"
+                required
+            >
+
+            <button
+                type="submit"
+                class="btn btn-primary"
+            >
+                Add Student
+            </button>
+
+        </form>
+
+        <!-- SEARCH -->
+
+        <form
+            action="/search"
+            method="GET"
+            class="search-box"
+        >
+
+            <input
+                type="text"
+                name="keyword"
+                placeholder="Search by Name, ID or Course"
+            >
+
+            <button
+                type="submit"
+                class="btn btn-success"
+            >
+                Search
+            </button>
+
+        </form>
+
+        <!-- TABLE -->
+
+        <div class="table-container">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Course</th>
+                        <th>Email</th>
+                        <th>Subject 1</th>
+                        <th>Subject 2</th>
+                        <th>Subject 3</th>
+                        <th>Action</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    {% for student in students %}
+
+                    <tr>
+
+                        <td>
+                            {{ student.id }}
+                        </td>
+
+                        <td>
+                            {{ student.name }}
+                        </td>
+
+                        <td>
+                            {{ student.age }}
+                        </td>
+
+                        <td>
+                            {{ student.course }}
+                        </td>
+
+                        <td>
+                            {{ student.email }}
+                        </td>
+
+                        <td>
+                            {{ student.subject1 }}
+                        </td>
+
+                        <td>
+                            {{ student.subject2 }}
+                        </td>
+
+                        <td>
+                            {{ student.subject3 }}
+                        </td>
+
+                        <td class="action-buttons">
+
+                            <!-- EDIT -->
+
+                            <a
+                                href="/update/{{ student.id }}"
+                                class="link-btn small-btn"
+                            >
+                                Edit
+                            </a>
+
+                            <!-- DELETE -->
+
+                            <a
+                                href="/delete/{{ student.id }}"
+                                class="btn-danger small-btn"
+                            >
+                                Delete
+                            </a>
+
+                        </td>
+
+                    </tr>
+
+                    {% endfor %}
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <!-- BOTTOM BUTTONS -->
+
+        <div class="bottom-buttons">
+
+            <a
+                href="/analytics"
+                class="link-btn"
+            >
+                View Analytics
+            </a>
+
+            <a
+                href="/export/csv"
+                class="link-btn"
+            >
+                Export CSV
+            </a>
+
+            <a
+                href="/export/analytics"
+                class="link-btn"
+            >
+                Export Analytics
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- JS -->
+
+    <script src="/static/app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Update Student
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="/static/style.css"
+    >
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1 class="title">
+            Update Student
+        </h1>
+
+        <p class="subtitle">
+            Edit student information
+        </p>
+
+        <form
+            method="POST"
+            class="student-form"
+        >
+
+            <input
+                type="text"
+                name="name"
+                value="{{ student.name }}"
+                required
+            >
+
+            <input
+                type="number"
+                name="age"
+                value="{{ student.age }}"
+                required
+            >
+
+            <input
+                type="text"
+                name="course"
+                value="{{ student.course }}"
+                required
+            >
+
+            <input
+                type="email"
+                name="email"
+                value="{{ student.email }}"
+                required
+            >
+
+            <input
+                type="number"
+                name="subject1"
+                value="{{ student.subject1 }}"
+                required
+            >
+
+            <input
+                type="number"
+                name="subject2"
+                value="{{ student.subject2 }}"
+                required
+            >
+
+            <input
+                type="number"
+                name="subject3"
+                value="{{ student.subject3 }}"
+                required
+            >
+
+            <button
+                type="submit"
+                class="btn btn-primary"
+            >
+                Update Student
+            </button>
+
+        </form>
+
+        <a
+            href="/"
+            class="link-btn"
+        >
+            Back To Home
+        </a>
+
+    </div>
+
+</body>
+</html>

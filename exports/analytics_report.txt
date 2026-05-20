@@ -1,0 +1,8 @@
+STUDENT ANALYTICS REPORT
+
+Highest Student: Tousif
+Lowest Student: Zaid
+
+PASS FAIL REPORT
+{'name': 'Tousif', 'average': 93.33, 'status': 'Pass'}
+{'name': 'Zaid', 'average': 64.0, 'status': 'Pass'}
